@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-200">
+    <header>
+        <h1 class="text-4xl mt-16 text-center ">let's get u some
+           <span class="text-purple-800"> money </span></h1>
+        </header>
+    <main class="w-3/4 mx-auto">
+        <!-- balance and transaction -->
+        <section>
+            <div class="grid grid-cols-3  gap-3  mt-16">
+                <div>
+                    <div class="bg-green-400 p-8 rounded shadow">
+                        <h3 class="text-2xl">Deposit</h3>
+                        <h4 class="text-4xl"> $ <span id="update_deposite">00</span> </h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-pink-400 p-8 rounded shadow">
+                        <h3 class="text-2xl">withdraw</h3>
+                        <h4 class="text-4xl"> $ <span id="update_withdraw">00</span></h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-yellow-400 p-8 rounded shadow">
+                        <h3 class="text-2xl">balance</h3>
+                        <h4 class="text-4xl">  $<span id="update_balance">1000</span></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- deposite  n withdraw section -->
+        <section class="my-5 ">
+            <!-- deposite -->
+            <div class="grid grid-cols-2 gap-2 ">
+                <div class="bg-blue-300 mt-2 p-5 rounded">
+                    <h3 class="text-3xl">deposite amount</h3>
+                    <div>
+                        <input id="deposite_field" class="block border my-4 rounded " type="text" placeholder="$amount u want to deposite">
+                        <button id="deposite_btn" class="bg-blue-500 p-2 rounded shadow">deposite</button>
+                    </div>
+                </div>
+             <!-- withdraw -->
+                <div class="bg-purple-500 mt-2 p-5 rounded">
+                    <h3 class="text-3xl">withdraw amount</h3>
+                    <div>
+                        <input id="withdraw_field" class="block border my-4 rounded " type="text" placeholder="$amount u want to withdraw">
+                        <button id="withdraw_btn" class="bg-purple-600 p-2 rounded shadow">withdraw</button>
+                    </div>
+
+            </div>
+          
+           
+        </section>
+        
+    </main>
+  
+    <script src="js/bank_function.js"></script>
+</body>
+</html>
